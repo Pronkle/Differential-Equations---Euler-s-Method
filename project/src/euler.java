@@ -15,10 +15,17 @@ public class euler{
             this.y_coord = d;
         }
         public int calculate(info o){
+            int cons = 0;
+            int res = 0;
+            char cur = ' ';
+            char next = ' ';
             for(int i = 0; i < o.equation.length; i++){
+                cur = o.equation[i];
+                next = o.equation[i+1];
+                
 
             }
-            return 0; // TEMPORARY
+            return res; // TEMPORARY
         }
         
     }
@@ -28,7 +35,7 @@ public class euler{
         PrintWriter pw = new PrintWriter(System.out);
         pw.println("Welcome to Euler Calculator V.0.2, please enter your Differential Equation. (Q for quit)");
         char[] eq = st.nextToken().toCharArray();
-        if(eq[0] == 'Q'){
+        if(eq[0] == 'Q'){   
             pw.println("exited program");
         }
         else{
